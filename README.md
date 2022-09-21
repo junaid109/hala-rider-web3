@@ -1,3 +1,8 @@
+## Hala Rider WEB 3.0
+
+![uber1](https://user-images.githubusercontent.com/8495748/191528105-043c0dd0-cdb5-4dfb-ad85-6be5de0016d7.png)
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
