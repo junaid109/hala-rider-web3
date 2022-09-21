@@ -1,34 +1,29 @@
-import LocationSelector from '../components/LocationSelector'
+import Navbar from '../components/Navbar'
 import Map from '../components/Map'
-import NavBar from '../components/NavBar'
-import Confirm from './../components/Confirm';
+import LocationSelector from '../components/LocationSelector'
+import Confirm from '../components/Confirm'
 
 const style = {
-  wrapper: 'h-screen flex flex-col justify-center items-center',
-  color: 'red',
-  fontSize: '2rem',
-  main: 'h-full w-screen flex-1 x-10',
-  mapContainer: 'flex1-1 h-full w-full',
-  riderRequestContainer: 'h-full w-[400px] m1-[1rem] py-[3rem] absolute left-0 top-0 flex flex-col justify-end z-20', 
-  rideRequest: 'h-full max-h-[700px] bg-white rounded-[1rem] shadow-lg flex flex-col overflow-y-auto',
+  wrapper: `h-screen w-screen flex flex-col`,
+  main: `h-full w-screen flex-1 z-10`,
+  mapContainer: `flex-1 w-full h-full`,
+  rideRequestContainer: `h-full w-[400px] ml-[1rem] py-[3rem] absolute top-0 left-0 flex flex-col justify-end z-20`,
+  rideRequest: `h-full max-h-[700px] bg-white rounded-lg flex flex-col overflow-scroll`,
 }
-
 
 export default function Home() {
   return (
     <div className={style.wrapper}>
-    <NavBar />
+      <Navbar />
       <div className={style.main}>
+        <Map />
       </div>
-      <div className={style.riderRequestContainer}>
-      <div className={style.rideRequest}> 
-      <LocationSelector/>
-      <Confirm />
-          </div> 
+      <div className={style.rideRequestContainer}>
+        <div className={style.rideRequest}>
+          <LocationSelector />
+          <Confirm />
+        </div>
       </div>
-      <Map/>
-
     </div>
-
   )
 }
