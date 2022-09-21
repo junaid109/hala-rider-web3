@@ -19,7 +19,6 @@ export default function Home() {
     <div className={style.wrapper}>
     <NavBar />
       <div className={style.main}>
-      <Map/>
       </div>
       <div className={style.riderRequestContainer}>
       <div className={style.rideRequest}> 
@@ -27,6 +26,8 @@ export default function Home() {
       <Confirm />
           </div> 
       </div>
+      <Map/>
+
     </div>
 
   )

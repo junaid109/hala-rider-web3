@@ -65,14 +65,14 @@ const RiderSelector = () => {
             </div>
         </div>
     ))}
-            <div className={style.carInfo}>
-                <div className={style.carName}>{car.name}</div>
-                <div className={style.carTime}>{car.time}</div>
-                <div className={style.carPrice}>{car.price}</div>
-                <div className={style.carStar}>{car.star}</div>
+            {/* <div className={style.carInfo}>
+                <div className={style.carName}>{carList.}</div>
+                <div className={style.carTime}>{carInfo.time}</div>
+                <div className={style.carPrice}>{carInfo.price}</div>
+                <div className={style.carStar}>{carInfo.star}</div> */}
 
                 
-        </div>
+        {/* </div> */}
         
     </div>
     </div>
