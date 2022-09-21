@@ -1,6 +1,7 @@
 import LocationSelector from '../components/LocationSelector'
 import Map from '../components/Map'
 import NavBar from '../components/NavBar'
+import Confirm from './../components/Confirm';
 
 const style = {
   wrapper: 'h-screen flex flex-col justify-center items-center',
@@ -23,6 +24,7 @@ export default function Home() {
       <div className={style.riderRequestContainer}>
       <div className={style.rideRequest}> 
       <LocationSelector/>
+      <Confirm />
           </div> 
       </div>
     </div>
